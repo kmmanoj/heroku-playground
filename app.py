@@ -6,4 +6,4 @@ app = Flask(__name__)
 def hw():
     return dict(message="Hello world")
 
-app.run(port=5000)
+app.run()
