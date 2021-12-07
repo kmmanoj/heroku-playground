@@ -7,4 +7,5 @@ app = Flask(__name__)
 def hw():
     return dict(message="Hello world")
 
-app.run()
+if __name__ == "__main__":
+    app.run(port=int(os.getenv('PORT')))
